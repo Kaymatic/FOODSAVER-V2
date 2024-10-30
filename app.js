@@ -1,5 +1,5 @@
 // Import required modules
-const express = require('express');
+
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
@@ -99,7 +99,7 @@ app.use('/newsfeed', newsfeedRoute);
 // Serve static files
 app.use(express.static('public'));
 
-app.listen(5000, () => {
+app.listen(3000, () => {
     console.log('Server is running on http://localhost:5000');
 });
 
