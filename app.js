@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const express = require('express');
+const connectDB = require('./config/db'); 
+
+connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
